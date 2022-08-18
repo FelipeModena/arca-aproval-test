@@ -1,0 +1,30 @@
+AdminBundle\Entity\Event:
+    type: entity
+    table: null
+    repositoryClass: AdminBundle\Repository\EventRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        doctrin:
+            type: string
+            length: '1'
+            nullable: true
+        name:
+            type: string
+            length: '255'
+        email:
+            type: string
+            length: '55'
+            nullable: true
+            unique: true
+        phone:
+            type: string
+            length: '16'
+        password:
+            type: string
+            length: '16'
+    lifecycleCallbacks: {  }
