@@ -7,8 +7,9 @@ use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
-    public function indexAction($content)
+    public function indexAction()
     {
+        $content="coneteud";
         $data = array('content' => $content);
 
         $html = 'companySearch/index.html.twig';
