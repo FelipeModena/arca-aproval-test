@@ -1,7 +1,7 @@
-CompanyBundle\Entity\Event:
+CompanyBundle\Entity\CompanyEntity:
     type: entity
     table: null
-    repositoryClass: CompanyBundle\Repository\EventRepository
+    repositoryClass: CompanyBundle\Repository\CompanyEntityRepository
     id:
         id:
             type: integer
@@ -13,9 +13,8 @@ CompanyBundle\Entity\Event:
             type: string
             length: 255
         phone:
-            type: array
-            nullable: true
-            unique: true
+            type: string
+            length: 255
         address:
             type: string
             length: 255
@@ -24,15 +23,14 @@ CompanyBundle\Entity\Event:
             length: 255
         city:
             type: string
-            length: '60'
+            length: 255
         state:
             type: string
-            length: '50'
+            length: 255
         description:
             type: string
             length: 255
-            nullable: true
         category:
-            type: array
-            nullable: true
+            type: string
+            length: 255
     lifecycleCallbacks: {  }

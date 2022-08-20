@@ -1,7 +1,7 @@
-AdminBundle\Entity\Event:
+AdminBundle\Entity\AdminEntity:
     type: entity
     table: null
-    repositoryClass: AdminBundle\Repository\EventRepository
+    repositoryClass: AdminBundle\Repository\AdminEntityRepository
     id:
         id:
             type: integer
@@ -9,22 +9,16 @@ AdminBundle\Entity\Event:
             generator:
                 strategy: AUTO
     fields:
-        doctrin:
-            type: string
-            length: '1'
-            nullable: true
         name:
             type: string
-            length: '255'
+            length: 255
         email:
             type: string
-            length: '55'
-            nullable: true
-            unique: true
+            length: 255
         phone:
             type: string
-            length: '16'
+            length: 255
         password:
             type: string
-            length: '16'
+            length: 255
     lifecycleCallbacks: {  }

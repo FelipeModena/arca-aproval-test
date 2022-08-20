@@ -1,0 +1,24 @@
+companyentity_index:
+    path:     /
+    defaults: { _controller: "CompanyBundle:CompanyEntity:index" }
+    methods:  GET
+
+companyentity_show:
+    path:     /{id}/show
+    defaults: { _controller: "CompanyBundle:CompanyEntity:show" }
+    methods:  GET
+
+companyentity_new:
+    path:     /new
+    defaults: { _controller: "CompanyBundle:CompanyEntity:new" }
+    methods:  [GET, POST]
+
+companyentity_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "CompanyBundle:CompanyEntity:edit" }
+    methods:  [GET, POST]
+
+companyentity_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "CompanyBundle:CompanyEntity:delete" }
+    methods:  DELETE

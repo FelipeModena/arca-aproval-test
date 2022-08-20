@@ -3,19 +3,14 @@
 namespace AdminBundle\Entity;
 
 /**
- * Event
+ * AdminEntity
  */
-class Event
+class AdminEntity
 {
     /**
      * @var int
      */
     private $id;
-
-    /**
-     * @var string
-     */
-    private $doctrin;
 
     /**
      * @var string
@@ -49,35 +44,11 @@ class Event
     }
 
     /**
-     * Set doctrin
-     *
-     * @param string $doctrin
-     *
-     * @return Event
-     */
-    public function setDoctrin($doctrin)
-    {
-        $this->doctrin = $doctrin;
-
-        return $this;
-    }
-
-    /**
-     * Get doctrin
-     *
-     * @return string
-     */
-    public function getDoctrin()
-    {
-        return $this->doctrin;
-    }
-
-    /**
      * Set name
      *
      * @param string $name
      *
-     * @return Event
+     * @return AdminEntity
      */
     public function setName($name)
     {
@@ -101,7 +72,7 @@ class Event
      *
      * @param string $email
      *
-     * @return Event
+     * @return AdminEntity
      */
     public function setEmail($email)
     {
@@ -125,7 +96,7 @@ class Event
      *
      * @param string $phone
      *
-     * @return Event
+     * @return AdminEntity
      */
     public function setPhone($phone)
     {
@@ -149,7 +120,7 @@ class Event
      *
      * @param string $password
      *
-     * @return Event
+     * @return AdminEntity
      */
     public function setPassword($password)
     {

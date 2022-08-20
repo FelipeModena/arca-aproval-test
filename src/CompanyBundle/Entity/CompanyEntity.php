@@ -3,9 +3,9 @@
 namespace CompanyBundle\Entity;
 
 /**
- * Event
+ * CompanyEntity
  */
-class Event
+class CompanyEntity
 {
     /**
      * @var int
@@ -18,7 +18,7 @@ class Event
     private $name;
 
     /**
-     * @var array
+     * @var string
      */
     private $phone;
 
@@ -48,7 +48,7 @@ class Event
     private $description;
 
     /**
-     * @var array
+     * @var string
      */
     private $category;
 
@@ -68,7 +68,7 @@ class Event
      *
      * @param string $name
      *
-     * @return Event
+     * @return CompanyEntity
      */
     public function setName($name)
     {
@@ -90,9 +90,9 @@ class Event
     /**
      * Set phone
      *
-     * @param array $phone
+     * @param string $phone
      *
-     * @return Event
+     * @return CompanyEntity
      */
     public function setPhone($phone)
     {
@@ -104,7 +104,7 @@ class Event
     /**
      * Get phone
      *
-     * @return array
+     * @return string
      */
     public function getPhone()
     {
@@ -116,7 +116,7 @@ class Event
      *
      * @param string $address
      *
-     * @return Event
+     * @return CompanyEntity
      */
     public function setAddress($address)
     {
@@ -140,7 +140,7 @@ class Event
      *
      * @param string $code
      *
-     * @return Event
+     * @return CompanyEntity
      */
     public function setCode($code)
     {
@@ -164,7 +164,7 @@ class Event
      *
      * @param string $city
      *
-     * @return Event
+     * @return CompanyEntity
      */
     public function setCity($city)
     {
@@ -188,7 +188,7 @@ class Event
      *
      * @param string $state
      *
-     * @return Event
+     * @return CompanyEntity
      */
     public function setState($state)
     {
@@ -212,7 +212,7 @@ class Event
      *
      * @param string $description
      *
-     * @return Event
+     * @return CompanyEntity
      */
     public function setDescription($description)
     {
@@ -234,9 +234,9 @@ class Event
     /**
      * Set category
      *
-     * @param array $category
+     * @param string $category
      *
-     * @return Event
+     * @return CompanyEntity
      */
     public function setCategory($category)
     {
@@ -248,7 +248,7 @@ class Event
     /**
      * Get category
      *
-     * @return array
+     * @return string
      */
     public function getCategory()
     {

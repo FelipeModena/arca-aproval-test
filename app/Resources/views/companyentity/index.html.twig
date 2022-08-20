@@ -1,0 +1,53 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Companyentities list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Phone</th>
+                <th>Address</th>
+                <th>Code</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Description</th>
+                <th>Category</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for companyEntity in companyEntities %}
+            <tr>
+                <td><a href="{{ path('companyentity_show', { 'id': companyEntity.id }) }}">{{ companyEntity.id }}</a></td>
+                <td>{{ companyEntity.name }}</td>
+                <td>{{ companyEntity.phone }}</td>
+                <td>{{ companyEntity.address }}</td>
+                <td>{{ companyEntity.code }}</td>
+                <td>{{ companyEntity.city }}</td>
+                <td>{{ companyEntity.state }}</td>
+                <td>{{ companyEntity.description }}</td>
+                <td>{{ companyEntity.category }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('companyentity_show', { 'id': companyEntity.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('companyentity_edit', { 'id': companyEntity.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('companyentity_new') }}">Create a new companyEntity</a>
+        </li>
+    </ul>
+{% endblock %}
